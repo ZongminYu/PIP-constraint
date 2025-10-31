@@ -6,6 +6,8 @@ from subprocess import check_call
 from urllib.parse import urlparse
 from datetime import timedelta
 os.chdir(os.path.dirname(os.path.abspath(__file__)))
+# POMO+PIP/utils.py
+sys.path.insert(0, "../POMO+PIP")  # for utils
 sys.path.insert(0, "..")  # for utils
 from utils import check_extension, load_dataset, save_dataset, run_all_in_pool
 
